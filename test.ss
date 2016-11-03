@@ -1,0 +1,5 @@
+#lang scheme
+
+(let ((ls lista))
+	(cons (car ls) (rec(cdr ls)))
+)
