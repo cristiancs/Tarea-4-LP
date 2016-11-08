@@ -1,5 +1,6 @@
 #lang scheme
 
+(define suma 0)
 ;;(cubo numero)
 ;; Calcula el cubo del numero dado
 (define (cubo numero)
@@ -8,24 +9,16 @@
     (* sumado numero)
   )
 )
-;;(cubo numero)
-;; Recorre la lista y va sumando los cubos
-(define (sumar lista suma)
+(define (sumar-cubos lista)
   (cond
     [(= (length lista) 1)
      (set! suma (+ suma  (cubo (car lista))))
      (display suma)
+     (set! suma 0)
     ]
     [else
      (set! suma (+ suma  (cubo (car lista))))
-     (sumar (cdr lista) suma)
+     (sumar-cubos (cdr lista))
     ]
-  )
-)
-
-
-(define (sumar-cubos lista)
-  (let ((suma 0))
-    (sumar lista suma)
   )
 )
