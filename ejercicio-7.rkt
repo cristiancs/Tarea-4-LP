@@ -1,7 +1,5 @@
 #lang scheme
 
-;;(paridad 0)
-;;Lleva la cuenta de la paridad actual
 (define paridad 0)
 
 (define (impar f)

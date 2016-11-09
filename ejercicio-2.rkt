@@ -20,6 +20,7 @@
     ]
   )
 )
+
 (define (calculo asociacion palabra)
   (define lassoc asociacion)
   (let ((suma 0))

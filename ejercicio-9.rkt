@@ -1,6 +1,5 @@
 #lang scheme
 
-
 ;;(aux1 N lista)
 ;;Realiza el ordenamiento n veces (n inicial = tamanio lista)
 (define (aux1 N lista)    
@@ -8,6 +7,7 @@
           [else (aux1 (- N 1) (bubblesort lista))]
      )
 )
+
 ;;(bubblesort lista)
 ;;recursivamente ordena los items en la lista
 (define (bubblesort lista)

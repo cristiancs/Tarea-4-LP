@@ -4,6 +4,7 @@
 (define lista (list))
 (define temporal(list))
 (define mostrar #t)
+
 (define (compresor lst)
   (cond
     [(= (length lst) 1)

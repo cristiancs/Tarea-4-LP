@@ -1,6 +1,7 @@
 #lang scheme
 
 (define suma 0)
+
 ;;(cubo numero)
 ;; Calcula el cubo del numero dado
 (define (cubo numero)
@@ -9,6 +10,7 @@
     (* sumado numero)
   )
 )
+
 (define (sumar-cubos lista)
   (cond
     [(= (length lista) 1)

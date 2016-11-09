@@ -1,7 +1,5 @@
 #lang scheme
 
-;;(status 1)
-;;Lleva la cuenta de si se perdio el equilibrio
 (define status 1)
 
 ;;(lizq lista)

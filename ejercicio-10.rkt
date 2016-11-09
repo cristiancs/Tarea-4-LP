@@ -1,7 +1,7 @@
 #lang scheme
+
 ;;(reemplazar a b list)
 ;;Busca un valor en la lista y lo reemplaza con el nuevo valor, devuelve una lista con el valor reemplazado
-
 (define (reemplazar a b list)
  (cond
   [(null? list) '()]
