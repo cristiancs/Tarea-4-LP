@@ -13,5 +13,12 @@
     )
   )
 
-(define goferkiter )
+(define (goferkiter n)
+  (do ( (i 1 (+ i 1))
+        (a0 0 (+ a1 0))
+        (a1 1 (+ i (- a1 a0)))
+        )
+    ((= i (+ n 1)) a1)
+    )
+  )
 
