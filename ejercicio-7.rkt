@@ -6,12 +6,13 @@
 
 ;;(duplicar x)
 ;;Calcula el doble de un numero, si se ha llamado un numero impar de veces
-(define duplicar
-  (lambda (x)
+(define (duplicar x)
+  (define (impar n)
     (set! paridad (modulo (+ paridad 1) 2))
     (if (= (modulo paridad 2) 0)
-        x
-        (* x 2)
-     )
+        n
+        (* n 2)
+        )
     )
+  (impar x)
   )
